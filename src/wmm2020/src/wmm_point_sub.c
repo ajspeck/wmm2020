@@ -103,6 +103,6 @@ int wmmsub_f(double geolatitude, double geolongitude, double HeightAboveEllipsoi
 int wmmsub(double geolatitude, double geolongitude, double HeightAboveEllipsoid, double yeardecimal,
            double* X, double* Y, double* Z, double* F, double* Decl, double* Incl)
 {
-    return wmmsub(geolatitude, geolongitude, HeightAboveEllipsoid, yeardecimal,
+    return wmmsub_f(geolatitude, geolongitude, HeightAboveEllipsoid, yeardecimal,
                   X, Y, Z, F, Decl, Incl, "WMM.COF");
 }
